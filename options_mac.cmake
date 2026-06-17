@@ -18,6 +18,11 @@ if (NOT DESKTOP_APP_USE_PACKAGED)
     )
 endif()
 
+target_compile_definitions(common_options
+INTERFACE
+    META_NO_STD_FORWARD_DECLARATIONS
+)
+
 target_compile_options(common_options
 INTERFACE
     -pipe
