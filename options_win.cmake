@@ -31,7 +31,7 @@ if (MSVC)
         # /Qspectre
         /utf-8
         /W4
-        /MP2    # Enable multi process build with a safer memory cap.
+        /MP1    # Enable multi process build with a safer memory cap.
         /EHsc   # Catch C++ exceptions only, extern C functions never throw a C++ exception.
         /w15038 # wrong initialization order
         /w14265 # class has virtual functions, but destructor is not virtual
